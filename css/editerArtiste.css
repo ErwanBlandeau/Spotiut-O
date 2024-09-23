@@ -1,0 +1,104 @@
+.container-artiste {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    text-align: center;
+    flex-basis: 100%;
+    overflow-y: scroll;
+    max-height: 95vh;
+}
+
+.container-info {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    text-align: center;
+}
+
+.container-info label {
+    flex-basis: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-right: 8rem;
+    flex-basis: 100%;
+}
+
+.container-info input {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    flex-basis: 20%;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.container-info input:focus {
+    outline: none;
+    border: 2px solid #840c96;
+}
+
+.container-artiste a, .container-info input[type="submit"] {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    flex-basis: 100%;
+    transition: 0.3s;
+    background-color: transparent;
+    color: #fff;
+}
+
+.container-artiste a:hover, .container-info input[type="submit"]:hover, .container-info input[type="submit"]:focus{
+    color: #840c96;
+    text-decoration: underline;
+    transition: 0.3s;
+    outline: none;
+    border: none;
+}
+
+
+.erreur {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    flex-basis: 100%;
+}
+
+select {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.container-top-edit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 100%;
+    margin-top: 2rem;
+}
+
+.btn-retour img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-retour {
+    flex-basis: 10% !important;
+}

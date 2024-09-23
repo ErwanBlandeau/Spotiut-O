@@ -1,0 +1,310 @@
+.container-milieu-album {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* placement */
+    margin-top: 2vh;
+    margin-bottom: 14vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 5vw;
+}
+
+.container-milieu-bottom-left img {
+    width: 27vw;
+    height: 60vh;
+}
+
+.container-milieu-bottom-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: justify;
+    gap: 2vh;
+    flex-basis: 50%;
+}
+
+.container-milieu-bottom-left {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.titre-right {
+    font-size: 1.5vw;
+    color: #fff;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.container-btn-album {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* placement */
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    width: 100%;
+}
+
+.container-btn-album p {
+    font-size: 1.7vw;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-btn-album span {
+    font-size: 1.1vw;
+    font-weight: 300;
+    color: #6b6b6b;
+
+}
+
+.btn-retour img, .btn-editer img {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 0;
+}
+
+.btn-liste-attente img {
+    width: 1.5vw !important;
+    height: 1.5vw !important;
+    border-radius: 0;
+}
+
+/* musiques */
+.container-album-artiste {
+    background-color: #1b191f;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 60vh;
+    flex-basis: 100%;
+}
+
+.container-album-unique-artiste {
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0d13;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+    gap: 15px;
+}
+
+
+.container-album-unique-artiste:hover {
+    background-color: #0a090f;
+    transition: 0.1s;
+}
+
+.container-album-unique-artiste img {
+    width: 50px;
+    height: 50px;
+}
+
+.container-album-unique-artiste p {
+    font-size: 1vw;
+    color: #fff;
+    /* margin-left: 1vw; */
+    /* margin-right: 1vw; */
+    text-align: start;
+}
+
+.container-contenu-album-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenu-album {
+    flex-basis: 80%;
+    flex-grow: 1;
+}
+
+.genre-album {
+    margin-left: 2vw;
+}
+
+.date-album, .genre-album {
+    font-size: 0.8vw !important;
+    color: #6b6b6b !important;
+    flex-basis: 40%;
+    /* flex-grow: 1; */
+}
+
+/* lancer la musique */
+
+.lancer-music, .pause-music {
+    display: none;
+    margin-left: 20px;
+    margin-right: 10px;
+    z-index: 100;
+}
+
+.lancer-music img, .pause-music img{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 0;
+}
+
+.btn-like {
+    flex-basis: 10%;
+}
+
+.btn-like img {
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 0%;
+}
+
+.ajouter-music {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.btn-ajouter-a-playlist {
+    z-index: 100;
+}
+
+.container-ajouter {
+    display: none;
+    /* position: absolute; */
+    background-color: #1b191f;
+    border-radius: 10px;
+    padding: 10px;
+    /* transform: translate(100%, -10%); */
+    z-index: 1000;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-close img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-close {
+    flex-basis: 100%;
+    text-align: end;
+}
+
+.container-ajouter-playlist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.container-ajouter-playlist p {
+    text-align: center;
+}
+
+.lien-playlist {
+    color: #fff;
+    font-size: 1vw;
+    /* margin: 5px; */
+    text-decoration: none;
+    text-align: center;
+    background-color: #0f0d13;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+}
+
+.lien-playlist:hover {
+    background-color: #0a090f;
+}
+
+
+.container-rating {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px;    */
+}
+
+.container-rating img {
+    width: 40px;
+    height: 40px;
+}
+
+.etoile1, .etoile2, .etoile3, .etoile4, .etoile5 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.etoile-hidden {
+    display: none;
+}
+
+.etoile-actif {
+    display: block;
+}
+
+.numero-album {
+    margin-left: 28px;
+    margin-right: 17px;
+}
+
+
+.container-btn-playlist-right {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#btn-volume-high img, #btn-volume-low img, #btn-volume-mute img {
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+}
+
+.container-lecteur-right {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.jouer-playlist img {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.btn-supprimer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+}
+
+.btn-supprimer {
+    transition: 0.2s;
+}
+
+.btn-supprimer:hover {
+    transform: rotate(90deg);
+    transition: 0.2s;
+}

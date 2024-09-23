@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+body {
+    background-color: #0f0d13;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+.title {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.topbar {
+    border-bottom: 1px solid #555257;
+}
+
+.topbar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-center {
+    font-size: 50px;
+    color: #fff;
+    max-width: 450px;
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle a {
+    color: #8c1098;
+    font-weight: bold;
+    margin-left: 0.5em;
+    margin-bottom: 2em;
+}
+
+.subtitle a:hover {
+    color: #77138f;
+}
+
+/* Style général pour le formulaire */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #29282d;
+    color: white;
+}
+
+.form-group input,
+button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #77138f;
+    border: 2px solid #77138f
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #8c1098;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+form p {
+    color: #92929d;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #77138f;
+}
+
+.password-container {
+    position: relative;
+}
+
+#toggle-password-connexion, #toggle-password-inscription {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.password-hint {
+    color: #92929d;
+    font-size: 12px;
+}
+
+
+.erreur {
+    color: red;
+    margin-top: 20px;
+}
+
+#inscription-form {
+    display: none;
+}
+
+#subtitle-inscription {
+    display: none;
+}

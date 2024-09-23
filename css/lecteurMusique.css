@@ -1,0 +1,153 @@
+.container-lecteur {
+    z-index: 10000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #010102;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.container-lecteur-left {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.container-lecteur-left .pochette {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.container-lecteur-milieu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-lecteur-milieu-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.container-lecteur-milieu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.container-lecteur-milieu .icon {
+    width: 25px;
+    height: 25px;
+    transition: 0.2s;
+}
+
+#btn-play, #btn-pause {
+    background-color: white !important;
+    clip-path: circle();
+    width: 40px !important;
+    height: 40px !important;
+    z-index: 100000;
+}
+
+.imgPlay {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.imgPause {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.container-lecteur-milieu .icon:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.container-lecteur-milieu-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+}
+
+.container-lecteur-right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.slider-lecture {
+    width: 30vw;
+}
+
+.slider-volume {
+    width: 5vw;
+    background: linear-gradient(to right, #740c96 0%, #840c96 50%, #d3d3d3 50%, #d3d3d3 100%);
+}
+  
+.slider-volume, .slider-lecture {
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+  }
+  
+  .slider-volume:hover, .slider-lecture:hover {
+    opacity: 1;
+  }
+  
+  .slider-volume::-webkit-slider-thumb, .slider-lecture::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px; /* Reduire la taille du bouton */
+    height: 12px; /* Reduire la taille du bouton */
+    border-radius: 50%;
+    background: #840c96;
+    cursor: pointer;
+    opacity: 0; /* Cacher le bouton par défaut */
+    transition: opacity .2s;
+  }
+  
+  .slider-volume:hover::-webkit-slider-thumb, .slider-lecture:hover::-webkit-slider-thumb {
+    opacity: 1; /* Afficher le bouton lorsque le slider est survolé */
+  }
+  
+  .slider-volume::-moz-range-thumb, .slider-lecture::-moz-range-thumb {
+    width: 12px; /* Reduire la taille du bouton */
+    height: 12px; /* Reduire la taille du bouton */
+    border-radius: 50%;
+    background: #840c96;
+    cursor: pointer;
+    opacity: 0; /* Cacher le bouton par défaut */
+    transition: opacity .2s;
+  }
+  
+  .slider-volume:hover::-moz-range-thumb, .slider-lecture:hover::-moz-range-thumb {
+    opacity: 1; /* Afficher le bouton lorsque le slider est survolé */
+  }
+
+.lien-titre-music-lecteur, .lien-nom-artiste-lecteur {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.lien-titre-music-lecteur:hover, .lien-nom-artiste-lecteur:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+}
